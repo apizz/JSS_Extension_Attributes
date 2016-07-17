@@ -43,11 +43,11 @@ else
 	MAUVERSION="MAU: Not Installed"
 fi
 
-echo "<result>Word: $WVERSION
-Excel: $EVERSION
-PPT: $PVERSION
-OneNote: $ONVERSION
-Outlook: $OUVERSION
-MAU: $MAUVERSION</result>"
+echo "<result>$WVERSION
+$EVERSION
+$PVERSION
+$ONVERSION
+$OUVERSION
+$MAUVERSION</result>"
 
 exit
