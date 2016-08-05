@@ -7,7 +7,7 @@ if [ ! -d "$mountpoint" ]; then
 	/bin/mkdir $mountpoint
 fi
 
-# find recovery HD
+# find recovery HD of internal drive
 RecoveryHDID=`/usr/sbin/diskutil list | /usr/bin/grep "disk0" | /usr/bin/grep "Recovery HD" | /usr/bin/awk 'END { print $NF }'`
 
 # check if recovery HD is already mounted
