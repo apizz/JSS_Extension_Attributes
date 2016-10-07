@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PLIST="/Library/Preferences/com.oracle.java.Java-Updater.plist"
-LOG="/Library/Logs/TMSTech/TMSJava.log"
+LOG="/Library/Logs/Java-Update-Check.log"
 
 writelog () {
     /bin/echo $(date) ${1}
