@@ -1,1 +1,0 @@
-While I have this setup as a proactive EA, you could instead use this as a script and assign it to a policy. You could configure a separate EA to have computers fall in and out of the policy's scoped smart group to have the script only run on computers that actually need the Java updates disabled.
