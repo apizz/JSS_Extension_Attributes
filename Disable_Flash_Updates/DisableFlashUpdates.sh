@@ -5,7 +5,7 @@ FLASH_DIR="/Library/Application Support/Macromedia"
 FLASH_CFG="/Library/Application Support/Macromedia/mms.cfg"
 AUTO_UPDATE=`/bin/cat "$FLASH_CFG" | /usr/bin/head -n 1`
 SILENT_UPDATE=`/bin/cat "$FLASH_CFG" | /usr/bin/tail -n 1`
-LOG="/Library/Logs/TMSTech/TMSJava.log"
+LOG="/Library/Logs/Java-Updates-Check.log"
 
 writelog () {
 	/bin/echo $(date) ${1}
