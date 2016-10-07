@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PLUGIN="/Library/Internet Plug-Ins/Silverlight.plugin"
-LOG="/Library/Logs/TMSTech/TMSSilverlight.log"
+LOG="/Library/Logs/Silverlight-Update-Check.log"
 
 writelog () {
 	/bin/echo $(date) ${1}
