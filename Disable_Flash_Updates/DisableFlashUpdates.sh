@@ -8,7 +8,7 @@ SILENT_UPDATE=`/bin/cat "$FLASH_CFG" | /usr/bin/tail -n 1`
 LOG="/Library/Logs/Flash-Updates-Check.log"
 
 writelog () {
-	/bin/echo $(date) ${1}
+	/bin/echo ${1}
 	/bin/echo $(date) ${1} >> $LOG
 }
 
@@ -51,16 +51,16 @@ elif [ "$AUTO_UPDATE" != "AutoUpdateDisable=1" ] || [ "$SILENT_UPDATE" != "Silen
 	disable_flash
 	
 	if [ $? = 0 ]; then
-        writelog "Updates Disabled"
-        result="Updates Disabled"
-    else
-        writelog "Updates Disable Error"
-        result="Update Disable Error"
-    fi
+            writelog "Updates Disabled"
+            result="Updates Disabled"
+    	else
+            writelog "Updates Disable Error"
+            result="Update Disable Error"
+    	fi
 
 elif [ "$AUTO_UPDATE" = "AutoUpdateDisable=1" ] && [ "$SILENT_UPDATE" = "SilentAutoUpdateEnable=0" ]; then
-	writelog "Updates Already Disabled"
-	result="Updates Already Disabled"
+    writelog "Updates Already Disabled"
+    result="Updates Already Disabled"
 else
     writelog "Unknown Error"
     result="Unknown Error"
