@@ -18,6 +18,7 @@ if [ ! -f "$LOG" ]; then
 fi
 
 SILVERLIGHT () {
+	# the egrep makes sure to disregard the .localized, Shared, and our arduser (remote management) accounts
 	for USER in $( /bin/ls -1 /Users/ | /usr/bin/egrep -v '(.localized|arduser|Shared)' ); do
 		SLVLIGHT="/Users/$USER/Library/Preferences/com.microsoft.silverlight.plist"
 	
