@@ -6,7 +6,6 @@ Rather than setting up as a proactive EA, you could just make this a script run 
 
 Requirements for use:
 * Enter local user accounts to have the script check in the USER array
-* Enter the local admin account you do NOT wish to change the UserShell for in line 15
-** if [ "${USER[$i]}" != "ladmin" ]; then
+* Enter the local admin account you do NOT wish to change the UserShell for in line 15 (if [ "${USER[$i]}" != "ladmin" ]; then)
 
-To test the script works as expected, comment out line 22 so the UserShell is not changed.
+To test the script works as expected WITHOUT changing the UserShell, comment out line 22.
