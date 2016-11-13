@@ -5,7 +5,6 @@
 
 USER=('root'
 'ladmin'
-'arduser'
 'casperadmin')
 RESULT=()
 
