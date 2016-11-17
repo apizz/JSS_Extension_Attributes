@@ -4,8 +4,7 @@
 # by setting the UserShell for each user account to /usr/bin/false
 
 USER=('root'
-'ladmin'
-'casperadmin')
+'ladmin')
 RESULT=()
 
 for ((i = 0; i < "${#USER[@]}"; i++)); do	
