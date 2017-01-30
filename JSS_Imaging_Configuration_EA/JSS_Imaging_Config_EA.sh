@@ -11,6 +11,10 @@
 LOG="/var/log/imagingconfig.log"
 RESULT=$(/usr/bin/tail -1 "$LOG")
 
+if [ ! -f "$LOG" ]; then
+  RESULT="No Imaging Config Log Exists"
+fi
+
 /bin/echo "<result>$RESULT</result>"
 
 exit
