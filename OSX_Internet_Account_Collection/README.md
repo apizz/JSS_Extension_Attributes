@@ -5,3 +5,4 @@ The purpose of this is that while you can lockout users from the Internet Accoun
 You can prevent this through the com.apple.Safari.plist, but if you're like me and didn't know you needed to do this, this EA will identify users that have Internet Accounts configured so you can remove them.
 
 See my script below to go about removing them:
+https://github.com/apizz/Mac_Scripts/tree/master/OSX_Internet_Account_Removal
