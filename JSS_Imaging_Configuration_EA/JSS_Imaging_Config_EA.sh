@@ -8,10 +8,10 @@
 # https://github.com/apizz/Mac_Scripts/blob/master/JSS_Imaging_Configuration_Log/JSS_Imaging_Config_Log.sh
 ########################
 
-LOG="/var/log/imagingconfig.log"
-RESULT=$(/usr/bin/tail -1 "$LOG")
+LOG="/var/log/jamf.log"
+RESULT=$(/bin/cat "$LOG" | /usr/bin/grep IMAGINGCONFIG | /usr/bin/tail -1 | /usr/bin/sed -n -e 's/^.*IMAGINGCONFIG //p')
 
-if [ ! -f "$LOG" ]; then
+if [ "$RESULT" = "" ]; then
   RESULT="No Imaging Config Log Exists"
 fi
 
